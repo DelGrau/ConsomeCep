@@ -28,6 +28,12 @@ public class Main {
             result += inputLine;
 
         in.close();
-        return result;
+        // return result;
+
+        Cep objCep = new Cep();
+        objCep = Cep.unmarshalFromString(result);
+
+        return objCep.toString();
+
     }
 }
